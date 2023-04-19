@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCategories } from '../../redux/categorySlice'
 
-export default function Category() {
+export default function Category({setCategory}) {
   const dispatch =useDispatch()
   const {categories}=useSelector(state => state.categories)
 
@@ -18,7 +18,7 @@ export default function Category() {
         KATEGORİ
       </div>
       {categories.map((category,i)=>(
-        <div key={i} className='text-lg mt-1 cursor-pointer hover:bg-gray-200 p-2'>{category}</div>
+        <div onClick={()=>setCategory(category)} key={i} className='text-lg mt-1 cursor-pointer hover:bg-gray-200 p-2'>{category}</div>
       ))}
     </div>
   )
