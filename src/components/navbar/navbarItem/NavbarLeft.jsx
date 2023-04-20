@@ -1,7 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function NavbarLeft() {
   return (
-    <div className='text-6xl'>Shop</div>
+    <NavLink to={'/'} className='text-6xl cursor-pointer'>Shop</NavLink>
   )
 }

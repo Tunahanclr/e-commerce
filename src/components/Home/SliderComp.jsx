@@ -13,7 +13,7 @@ export default function SliderComp() {
       };
       
   return (
-    <div className="container mx-auto mt-8 rounded bg-gray-100 px-6">
+   <div className="container mx-auto mt-8 rounded bg-gray-100 px-6">
       <Slider {...settings}>
         <div className="!flex  mt-20 justify-center bg-gray items-center">
           <div className="mx-auto">
@@ -43,7 +43,7 @@ export default function SliderComp() {
           </div>
           <img
             src="	https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/0a588d2e-8d93-4937-8091-ec1270a953cf/air-force-1-shadow-ayakkab%C4%B1s%C4%B1-fNw903.png"
-            alt=""
+            alt="" 
             className="w-[500px] h-full object-contain"
           />
         </div>
